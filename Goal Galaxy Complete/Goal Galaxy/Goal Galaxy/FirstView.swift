@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class FirstView: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var followedUserGoals = [Goal]()
     
     let ref = Database.database().reference()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 if p != (self.passTextField?.text ?? "") as String
                 {
-                    print(p)
+                    
                     //If pass is not correct show error and return.
                     self.showAlert()
                     return
@@ -148,7 +148,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             let completed = goalDic?["completed"] as? [String:Any]
                             let isComplete = completed?["completed"] as! String
                             
-                            print(isComplete)
+                            
                             //Break down progressions for goals as well.
                             let progressions = goalDic?["progressions"] as? [String:Any]
                             
@@ -177,7 +177,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
         //Prepare for segue and send this user to the goal browser.
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let dest = segue.destination as? GalaxyBrowser{
+            if let dest = segue.destination as? GalaxyBrowserView{
                 
                 //Set back button text to "Log Out".
                 let backItem = UIBarButtonItem()

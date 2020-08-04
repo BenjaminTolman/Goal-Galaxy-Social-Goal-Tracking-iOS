@@ -45,16 +45,16 @@ class ProgressView: UIViewController, UITextViewDelegate {
         }
     }
     
-    //TODO Validation
+ 
     @IBAction func add(_ sender: Any) {
         
-        //TODO add alert here if not true.
+       
         if progressTitleField.text?.isEmpty == false
             && progressNoteField.textColor != UIColor.lightGray && progressTitleField.textColor != UIColor.lightGray
         {
             
             
-            // get the current date and time
+            //Get the current date and time
             let currentDateTime = Date()
             let formatter = DateFormatter()
             formatter.timeStyle = .none

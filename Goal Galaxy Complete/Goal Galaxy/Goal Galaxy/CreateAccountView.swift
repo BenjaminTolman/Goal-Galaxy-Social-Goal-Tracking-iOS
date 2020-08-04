@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class CreateAccount: UIViewController {
+class CreateAccountView: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     

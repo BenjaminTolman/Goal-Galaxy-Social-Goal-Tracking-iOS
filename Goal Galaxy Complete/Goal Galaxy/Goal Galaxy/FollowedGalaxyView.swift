@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FollowedGalaxyViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+class FollowedGalaxyView: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,6 +27,7 @@ class FollowedGalaxyViewController: UIViewController , UITableViewDelegate, UITa
         return followedGoal!.progressions!.count
     }
     
+    //Set cells and images.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == followedGoal!.progressions!.count  - 1{

@@ -1,18 +1,18 @@
 //
-//  FollowedUserTableViewCell.swift
+//  FollowedGoalCellTableViewCell.swift
 //  Goal Galaxy
 //
-//  Created by Benjamin Tolman on 7/26/20.
+//  Created by Benjamin Tolman on 7/27/20.
 //  Copyright © 2020 Benjamin Tolman. All rights reserved.
 //
 
 import UIKit
 
-class FollowedUserTableViewCell: UITableViewCell {
+class FollowedGalaxyCell: UITableViewCell {
 
-    @IBOutlet weak var userName: UILabel!
-    
-    @IBOutlet weak var numberOfGoals: UILabel!
+    @IBOutlet weak var goalName: UILabel!
+    @IBOutlet weak var goalDesc: UITextView!
+    @IBOutlet weak var galaxyImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +24,4 @@ class FollowedUserTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-   
-
 }

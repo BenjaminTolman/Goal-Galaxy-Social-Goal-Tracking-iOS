@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
-class FollowedUsers: UIViewController, UITableViewDelegate, UITableViewDataSource, GetUserDelegate{
+class FollowedUsersView: UIViewController, UITableViewDelegate, UITableViewDataSource, GetUserDelegate{
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -33,7 +33,7 @@ class FollowedUsers: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "followedGoalCell", for: indexPath) as? FollowedUserTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "followedGoalCell", for: indexPath) as? FollowedUserCell
             else
         {
             return tableView.dequeueReusableCell(withIdentifier: "followedGoalCell", for: indexPath)
@@ -55,7 +55,7 @@ class FollowedUsers: UIViewController, UITableViewDelegate, UITableViewDataSourc
           }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let dest = segue.destination as? FollowedGalaxyBrowserViewController{
+        if let dest = segue.destination as? FollowedGalaxyBrowserView{
             dest.user = self.user
             dest.followedUser = self.followedUser
             dest.delegate = self
@@ -73,6 +73,7 @@ class FollowedUsers: UIViewController, UITableViewDelegate, UITableViewDataSourc
         performSegue(withIdentifier: "toSearch", sender: self)
     }
     
+    //This gets a user back and prepares it in UI and for follow.
     func getUser(user: User, unfollow: Bool) {
         
         if !unfollow{
@@ -99,6 +100,7 @@ class FollowedUsers: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
     }
     
+    //Go back to my galaxies.
     @IBAction func myGalaxies(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

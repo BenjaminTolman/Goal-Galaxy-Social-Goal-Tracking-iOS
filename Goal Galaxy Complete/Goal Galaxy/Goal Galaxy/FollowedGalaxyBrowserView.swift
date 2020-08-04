@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class FollowedGalaxyBrowserViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+class FollowedGalaxyBrowserView: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,8 +27,6 @@ class FollowedGalaxyBrowserViewController: UIViewController , UITableViewDelegat
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        //Load up the user and publish their goals here.
-        //Then let user click and view the goals.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,13 +38,12 @@ class FollowedGalaxyBrowserViewController: UIViewController , UITableViewDelegat
     //Initialize tableview.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "browserCell", for: indexPath) as? FollowedGoalCellTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "browserCell", for: indexPath) as? FollowedGalaxyCell
             else
         {
             return tableView.dequeueReusableCell(withIdentifier: "browserCell", for: indexPath)
         }
         
-        //TODO if goal is complete. 
         cell.goalName?.text = followedUser?.goals?[indexPath.row].name
         cell.goalDesc?.text = followedUser?.goals?[indexPath.row].desc
         
@@ -69,12 +66,13 @@ class FollowedGalaxyBrowserViewController: UIViewController , UITableViewDelegat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let dest = segue.destination as? FollowedGalaxyViewController{
+        if let dest = segue.destination as? FollowedGalaxyView{
             dest.followedGoal = self.followedGoal
     }
     }
     
     
+    //Return the followed user and delete it in callback.
     @IBAction func unfollowButton(_ sender: Any) {
         delegate?.getUser(user: followedUser!, unfollow: true)
         

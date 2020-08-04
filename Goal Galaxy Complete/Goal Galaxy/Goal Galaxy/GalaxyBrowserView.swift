@@ -6,14 +6,10 @@
 //  Copyright © 2020 Benjamin Tolman. All rights reserved.
 //
 
-//MARK: This view is for looking at all galaxies.
-
-//TODO check in view did load if its my goals or followed goals.
-
 import UIKit
 import FirebaseDatabase
 
-class GalaxyBrowser: UIViewController, UITableViewDelegate, UITableViewDataSource, GetGoalDelegate {
+class GalaxyBrowserView: UIViewController, UITableViewDelegate, UITableViewDataSource, GetGoalDelegate {
     
     
     //Tableview
@@ -79,7 +75,7 @@ class GalaxyBrowser: UIViewController, UITableViewDelegate, UITableViewDataSourc
     //Prepare for any segues and attach any data.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let dest = segue.destination as? CreateGalaxy{
+        if let dest = segue.destination as? CreateGalaxyView{
             dest.user = self.user
             dest.delegate = self
         }
@@ -91,7 +87,7 @@ class GalaxyBrowser: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
         
         //Segue to followed users with reference to this user.
-        if let dest = segue.destination as? FollowedUsers{
+        if let dest = segue.destination as? FollowedUsersView{
             dest.user = self.user
         }
     }

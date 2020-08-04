@@ -9,10 +9,12 @@
 import Foundation
 class User
 {
+    //Stored properties.
     var name: String
     var goals: [Goal]?
     var followedUsers : [User]
     
+    //Initialization.
     init(name: String, goals: [Goal], followedUsers: [User]){
         self.name = name
         self.goals = goals

@@ -6,7 +6,6 @@
 //  Copyright © 2020 Benjamin Tolman. All rights reserved.
 //
 
-//MARK: This view is for looking at a galaxy.
 
 import UIKit
 
@@ -46,7 +45,6 @@ class GalaxyView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
                 return tableView.dequeueReusableCell(withIdentifier: "goalCell", for: indexPath)
             }
             
-            //TODO get dates from class
             cell.progressName?.text = ("\(progressions![indexPath.row].name)")
                 
             cell.progressDate?.text = ("\(progressions![indexPath.row].date)")
@@ -64,7 +62,6 @@ class GalaxyView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
                     return tableView.dequeueReusableCell(withIdentifier: "goalCell2", for: indexPath)
                 }
                 
-                //TODO get dates from class
                 cell.progressName?.text = ("\(progressions![indexPath.row].name)")
                     
                 cell.progressDate?.text = ("\(progressions![indexPath.row].date)")
@@ -81,7 +78,6 @@ class GalaxyView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
                     return tableView.dequeueReusableCell(withIdentifier: "goalCell3", for: indexPath)
                 }
                 
-                //TODO get dates from class
                 cell.progressName?.text = ("\(progressions![indexPath.row].name)")
                     
                 cell.progressDate?.text = ("\(progressions![indexPath.row].date)")
@@ -123,7 +119,7 @@ class GalaxyView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         tableView.reloadData()
     }
     
-    //TODO delete goal
+    //Delete goal at callback.
     @IBAction func deleteThisGalaxy(_ sender: Any) {
         
         for goal in user!.goals!{
@@ -137,6 +133,7 @@ class GalaxyView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         navigationController?.popViewController(animated: true)
     }
     
+    //Mark complete at callback.
     @IBAction func markComplete(_ sender: Any) {
         
         for goal in user!.goals!{
@@ -147,5 +144,4 @@ class GalaxyView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
             }
         }
     }
-    
 }

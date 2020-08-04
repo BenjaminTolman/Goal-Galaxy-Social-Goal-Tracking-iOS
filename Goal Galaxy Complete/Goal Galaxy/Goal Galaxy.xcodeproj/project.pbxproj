@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		61331C858B5994C857379B02 /* Pods_Goal_GalaxyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC58EB3FCEC808844C73FA9A /* Pods_Goal_GalaxyTests.framework */; };
 		6428F9E19CDB5394E064998D /* Pods_Goal_Galaxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5B95ED5DECEF75CB8709FD /* Pods_Goal_Galaxy.framework */; };
-		A13849FB24C3A4C600215178 /* GalaxyBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13849FA24C3A4C600215178 /* GalaxyBrowser.swift */; };
+		A13849FB24C3A4C600215178 /* GalaxyBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13849FA24C3A4C600215178 /* GalaxyBrowserView.swift */; };
 		A13849FD24C3AA9B00215178 /* BrowseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13849FC24C3AA9B00215178 /* BrowseTableViewCell.swift */; };
 		A13849FF24C3ABD500215178 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13849FE24C3ABD500215178 /* Goal.swift */; };
-		A1384A0124C3ECCF00215178 /* CreateGalaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A0024C3ECCF00215178 /* CreateGalaxy.swift */; };
+		A1384A0124C3ECCF00215178 /* CreateGalaxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A0024C3ECCF00215178 /* CreateGalaxyView.swift */; };
 		A1384A0324C4BBA300215178 /* GetGoalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A0224C4BBA300215178 /* GetGoalDelegate.swift */; };
 		A1384A0524C4C82700215178 /* GalaxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A0424C4C82700215178 /* GalaxyView.swift */; };
 		A1384A0724C4E41000215178 /* GalaxyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A0624C4E41000215178 /* GalaxyTableViewCell.swift */; };
@@ -20,17 +20,17 @@
 		A1384A1324C6429400215178 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A1224C6429400215178 /* ProgressView.swift */; };
 		A1384A1724C789E500215178 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1384A1624C789E500215178 /* GoogleService-Info.plist */; };
 		A1384A1924CA9F2700215178 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A1824CA9F2700215178 /* User.swift */; };
-		A1384A1B24CB573A00215178 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A1A24CB573A00215178 /* CreateAccount.swift */; };
+		A1384A1B24CB573A00215178 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A1A24CB573A00215178 /* CreateAccountView.swift */; };
 		A1384A1D24CB827500215178 /* GetUserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A1C24CB827500215178 /* GetUserDelegate.swift */; };
-		A1384A2124CE05F000215178 /* FollowedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2024CE05F000215178 /* FollowedUsers.swift */; };
-		A1384A2324CE07B500215178 /* FollowedUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2224CE07B500215178 /* FollowedUserTableViewCell.swift */; };
-		A1384A2524CE19DE00215178 /* FollowedGalaxyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2424CE19DE00215178 /* FollowedGalaxyBrowserViewController.swift */; };
-		A1384A2724CF3F1200215178 /* FollowedGoalCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2624CF3F1200215178 /* FollowedGoalCellTableViewCell.swift */; };
-		A1384A2924CF42E200215178 /* FollowedGalaxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2824CF42E200215178 /* FollowedGalaxyViewController.swift */; };
+		A1384A2124CE05F000215178 /* FollowedUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2024CE05F000215178 /* FollowedUsersView.swift */; };
+		A1384A2324CE07B500215178 /* FollowedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2224CE07B500215178 /* FollowedUserCell.swift */; };
+		A1384A2524CE19DE00215178 /* FollowedGalaxyBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2424CE19DE00215178 /* FollowedGalaxyBrowserView.swift */; };
+		A1384A2724CF3F1200215178 /* FollowedGalaxyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2624CF3F1200215178 /* FollowedGalaxyCell.swift */; };
+		A1384A2924CF42E200215178 /* FollowedGalaxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2824CF42E200215178 /* FollowedGalaxyView.swift */; };
 		A1384A2B24CF4FE200215178 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1384A2A24CF4FE200215178 /* SearchView.swift */; };
 		A1F5B58024B7C36900D26F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B57F24B7C36900D26F05 /* AppDelegate.swift */; };
 		A1F5B58224B7C36900D26F05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B58124B7C36900D26F05 /* SceneDelegate.swift */; };
-		A1F5B58424B7C36900D26F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B58324B7C36900D26F05 /* ViewController.swift */; };
+		A1F5B58424B7C36900D26F05 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B58324B7C36900D26F05 /* FirstView.swift */; };
 		A1F5B58724B7C36900D26F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F5B58524B7C36900D26F05 /* Main.storyboard */; };
 		A1F5B58A24B7C36900D26F05 /* Goal_Galaxy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B58824B7C36900D26F05 /* Goal_Galaxy.xcdatamodeld */; };
 		A1F5B58C24B7C36A00D26F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F5B58B24B7C36A00D26F05 /* Assets.xcassets */; };
@@ -61,10 +61,10 @@
 		0A798E19006EF81EA7588AC1 /* Pods_Goal_Galaxy_Goal_GalaxyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goal_Galaxy_Goal_GalaxyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054C54DF16A9D9357C2C5B6 /* Pods-Goal GalaxyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goal GalaxyTests.debug.xcconfig"; path = "Target Support Files/Pods-Goal GalaxyTests/Pods-Goal GalaxyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D181E0AEF2B1176C1EF03A0 /* Pods-Goal Galaxy-Goal GalaxyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goal Galaxy-Goal GalaxyUITests.release.xcconfig"; path = "Target Support Files/Pods-Goal Galaxy-Goal GalaxyUITests/Pods-Goal Galaxy-Goal GalaxyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A13849FA24C3A4C600215178 /* GalaxyBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyBrowser.swift; sourceTree = "<group>"; };
+		A13849FA24C3A4C600215178 /* GalaxyBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyBrowserView.swift; sourceTree = "<group>"; };
 		A13849FC24C3AA9B00215178 /* BrowseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTableViewCell.swift; sourceTree = "<group>"; };
 		A13849FE24C3ABD500215178 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		A1384A0024C3ECCF00215178 /* CreateGalaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGalaxy.swift; sourceTree = "<group>"; };
+		A1384A0024C3ECCF00215178 /* CreateGalaxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGalaxyView.swift; sourceTree = "<group>"; };
 		A1384A0224C4BBA300215178 /* GetGoalDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoalDelegate.swift; sourceTree = "<group>"; };
 		A1384A0424C4C82700215178 /* GalaxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyView.swift; sourceTree = "<group>"; };
 		A1384A0624C4E41000215178 /* GalaxyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyTableViewCell.swift; sourceTree = "<group>"; };
@@ -72,18 +72,18 @@
 		A1384A1224C6429400215178 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		A1384A1624C789E500215178 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1384A1824CA9F2700215178 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A1384A1A24CB573A00215178 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		A1384A1A24CB573A00215178 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		A1384A1C24CB827500215178 /* GetUserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserDelegate.swift; sourceTree = "<group>"; };
-		A1384A2024CE05F000215178 /* FollowedUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedUsers.swift; sourceTree = "<group>"; };
-		A1384A2224CE07B500215178 /* FollowedUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedUserTableViewCell.swift; sourceTree = "<group>"; };
-		A1384A2424CE19DE00215178 /* FollowedGalaxyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedGalaxyBrowserViewController.swift; sourceTree = "<group>"; };
-		A1384A2624CF3F1200215178 /* FollowedGoalCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedGoalCellTableViewCell.swift; sourceTree = "<group>"; };
-		A1384A2824CF42E200215178 /* FollowedGalaxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedGalaxyViewController.swift; sourceTree = "<group>"; };
+		A1384A2024CE05F000215178 /* FollowedUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedUsersView.swift; sourceTree = "<group>"; };
+		A1384A2224CE07B500215178 /* FollowedUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedUserCell.swift; sourceTree = "<group>"; };
+		A1384A2424CE19DE00215178 /* FollowedGalaxyBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedGalaxyBrowserView.swift; sourceTree = "<group>"; };
+		A1384A2624CF3F1200215178 /* FollowedGalaxyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedGalaxyCell.swift; sourceTree = "<group>"; };
+		A1384A2824CF42E200215178 /* FollowedGalaxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedGalaxyView.swift; sourceTree = "<group>"; };
 		A1384A2A24CF4FE200215178 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A1F5B57C24B7C36900D26F05 /* Goal Galaxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goal Galaxy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F5B57F24B7C36900D26F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F5B58124B7C36900D26F05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1F5B58324B7C36900D26F05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1F5B58324B7C36900D26F05 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		A1F5B58624B7C36900D26F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1F5B58924B7C36900D26F05 /* Goal_Galaxy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal_Galaxy.xcdatamodel; sourceTree = "<group>"; };
 		A1F5B58B24B7C36A00D26F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,32 +179,32 @@
 		A1F5B57E24B7C36900D26F05 /* Goal Galaxy */ = {
 			isa = PBXGroup;
 			children = (
-				A1384A1624C789E500215178 /* GoogleService-Info.plist */,
-				A1384A0E24C6419900215178 /* Progression.swift */,
 				A1F5B57F24B7C36900D26F05 /* AppDelegate.swift */,
 				A1F5B58124B7C36900D26F05 /* SceneDelegate.swift */,
-				A1F5B58324B7C36900D26F05 /* ViewController.swift */,
+				A1F5B58324B7C36900D26F05 /* FirstView.swift */,
+				A13849FA24C3A4C600215178 /* GalaxyBrowserView.swift */,
+				A1384A2024CE05F000215178 /* FollowedUsersView.swift */,
+				A1384A2A24CF4FE200215178 /* SearchView.swift */,
+				A1384A2424CE19DE00215178 /* FollowedGalaxyBrowserView.swift */,
+				A1384A2824CF42E200215178 /* FollowedGalaxyView.swift */,
+				A1384A1A24CB573A00215178 /* CreateAccountView.swift */,
+				A1384A0424C4C82700215178 /* GalaxyView.swift */,
+				A1384A0024C3ECCF00215178 /* CreateGalaxyView.swift */,
+				A1384A1224C6429400215178 /* ProgressView.swift */,
 				A1384A1824CA9F2700215178 /* User.swift */,
 				A13849FE24C3ABD500215178 /* Goal.swift */,
-				A13849FA24C3A4C600215178 /* GalaxyBrowser.swift */,
-				A1384A2024CE05F000215178 /* FollowedUsers.swift */,
-				A1384A2A24CF4FE200215178 /* SearchView.swift */,
-				A1384A2424CE19DE00215178 /* FollowedGalaxyBrowserViewController.swift */,
-				A1384A2824CF42E200215178 /* FollowedGalaxyViewController.swift */,
-				A1384A1A24CB573A00215178 /* CreateAccount.swift */,
-				A1384A0424C4C82700215178 /* GalaxyView.swift */,
-				A1384A0024C3ECCF00215178 /* CreateGalaxy.swift */,
-				A1384A1224C6429400215178 /* ProgressView.swift */,
+				A1384A0E24C6419900215178 /* Progression.swift */,
 				A13849FC24C3AA9B00215178 /* BrowseTableViewCell.swift */,
 				A1384A0624C4E41000215178 /* GalaxyTableViewCell.swift */,
-				A1384A2624CF3F1200215178 /* FollowedGoalCellTableViewCell.swift */,
-				A1384A2224CE07B500215178 /* FollowedUserTableViewCell.swift */,
+				A1384A2624CF3F1200215178 /* FollowedGalaxyCell.swift */,
+				A1384A2224CE07B500215178 /* FollowedUserCell.swift */,
 				A1384A0224C4BBA300215178 /* GetGoalDelegate.swift */,
 				A1384A1C24CB827500215178 /* GetUserDelegate.swift */,
 				A1F5B58B24B7C36A00D26F05 /* Assets.xcassets */,
 				A1F5B58524B7C36900D26F05 /* Main.storyboard */,
 				A1F5B58D24B7C36A00D26F05 /* LaunchScreen.storyboard */,
 				A1F5B59024B7C36A00D26F05 /* Info.plist */,
+				A1384A1624C789E500215178 /* GoogleService-Info.plist */,
 				A1F5B58824B7C36900D26F05 /* Goal_Galaxy.xcdatamodeld */,
 			);
 			path = "Goal Galaxy";
@@ -469,27 +469,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F5B58A24B7C36900D26F05 /* Goal_Galaxy.xcdatamodeld in Sources */,
-				A1384A2124CE05F000215178 /* FollowedUsers.swift in Sources */,
+				A1384A2124CE05F000215178 /* FollowedUsersView.swift in Sources */,
 				A1384A0724C4E41000215178 /* GalaxyTableViewCell.swift in Sources */,
-				A1F5B58424B7C36900D26F05 /* ViewController.swift in Sources */,
-				A1384A2524CE19DE00215178 /* FollowedGalaxyBrowserViewController.swift in Sources */,
-				A13849FB24C3A4C600215178 /* GalaxyBrowser.swift in Sources */,
+				A1F5B58424B7C36900D26F05 /* FirstView.swift in Sources */,
+				A1384A2524CE19DE00215178 /* FollowedGalaxyBrowserView.swift in Sources */,
+				A13849FB24C3A4C600215178 /* GalaxyBrowserView.swift in Sources */,
 				A1F5B58024B7C36900D26F05 /* AppDelegate.swift in Sources */,
 				A1F5B58224B7C36900D26F05 /* SceneDelegate.swift in Sources */,
 				A1384A1D24CB827500215178 /* GetUserDelegate.swift in Sources */,
-				A1384A2324CE07B500215178 /* FollowedUserTableViewCell.swift in Sources */,
+				A1384A2324CE07B500215178 /* FollowedUserCell.swift in Sources */,
 				A1384A2B24CF4FE200215178 /* SearchView.swift in Sources */,
 				A13849FD24C3AA9B00215178 /* BrowseTableViewCell.swift in Sources */,
 				A1384A0524C4C82700215178 /* GalaxyView.swift in Sources */,
-				A1384A2724CF3F1200215178 /* FollowedGoalCellTableViewCell.swift in Sources */,
+				A1384A2724CF3F1200215178 /* FollowedGalaxyCell.swift in Sources */,
 				A1384A1924CA9F2700215178 /* User.swift in Sources */,
 				A1384A0F24C6419900215178 /* Progression.swift in Sources */,
 				A1384A0324C4BBA300215178 /* GetGoalDelegate.swift in Sources */,
 				A1384A1324C6429400215178 /* ProgressView.swift in Sources */,
 				A13849FF24C3ABD500215178 /* Goal.swift in Sources */,
-				A1384A2924CF42E200215178 /* FollowedGalaxyViewController.swift in Sources */,
-				A1384A0124C3ECCF00215178 /* CreateGalaxy.swift in Sources */,
-				A1384A1B24CB573A00215178 /* CreateAccount.swift in Sources */,
+				A1384A2924CF42E200215178 /* FollowedGalaxyView.swift in Sources */,
+				A1384A0124C3ECCF00215178 /* CreateGalaxyView.swift in Sources */,
+				A1384A1B24CB573A00215178 /* CreateAccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

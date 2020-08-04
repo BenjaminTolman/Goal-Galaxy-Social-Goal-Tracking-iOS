@@ -10,14 +10,15 @@ import Foundation
 
 class Goal{
     
+    //Stored properties.
     var id: String
     var name: String
     var date: String
     var desc: String
     var completed: String
-    
     var progressions: [Progression]?
     
+    //Initialization.
     init(id: String, name: String, desc: String, date: String, progressions: [Progression], completed: String) {
         self.name = name
         self.date = date

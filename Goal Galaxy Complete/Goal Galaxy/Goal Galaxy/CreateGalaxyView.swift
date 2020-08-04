@@ -9,14 +9,13 @@
 import UIKit
 import FirebaseDatabase
 
-class CreateGalaxy: UIViewController, UITextViewDelegate {
+class CreateGalaxyView: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var goalNameText: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
     
     let ref = Database.database().reference()
     
-    //Todo get this user from before
     var user : User?
     
     var delegate: GetGoalDelegate?
